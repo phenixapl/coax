@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <header></header>
+    <header>
+
+    </header>
     <main>
     <section>
-      <div>
-          <table>
-              <thead></thead>
-              <tbody>
+      <div class="container" >
+          <table id="autoMotoTable">
+              <thead>
+                  <tr>
+                      <th onclick="sortTable(0)">id</th>
+                      <th onclick="sortTable(1)">model</th>
+                      <th onclick="sortTable(2)">brand</th>
+                      <th onclick="sortTable(3)">type</th>
+                  </tr>
+              </thead>
+              <tbody >
                     <tr>
                         <td>14</td>
                         <td>156</td>
@@ -52,10 +62,41 @@
               </tbody>
               <tfoot></tfoot>
           </table>
+          <aside>
+            <div class=dell_btn>
+                <button>X</button>
+                <button>X</button>
+                <button>X</button>
+                <button>X</button>
+                <button>X</button>
+                <button>X</button>
+                <button>X</button>
+            </div>
+         </aside>
       </div>  
     </section>
+    <section>
+        <div class="container">
+            <span id="btn"; onclick="openWin();">Add new car</span>
+            <div class="modal">
+                <h1>Write parameters</h1>
+                <form >
+                    <input type="text" placeholder="id"> <br>
+                    <input type="text" placeholder="model"><br>
+                    <input type="text" placeholder="brand"><br>
+                    <input type="radio" name="type">Car<br>
+                    <input type="radio"name="type">Motorcycle<br>
+                    <input type="submit" value="send">
+                </form>
+                 
+            </div>
+        </div>
+    </section>
+   
     </main>
-    <footer></footer>
+    <footer>
+
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
