@@ -65,3 +65,11 @@ overflow.onclick = function () {
 }
 
 /*end modal window*/
+/*start remove part*/
+Array.from(document.querySelectorAll('button')).forEach(function(e) {
+    e.addEventListener('click', function() {
+      var a = this.closest('tr');
+      a.parentElement.removeChild(a);
+    });
+  });
+/*end remove part*/
